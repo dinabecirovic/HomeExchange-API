@@ -82,14 +82,15 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowVercel",
-        policy =>
-        {
-            policy.WithOrigins("https://home-exchange-client.vercel.app") 
-                  .AllowAnyHeader()
-                  .AllowAnyMethod();
-        });
+    options.AddPolicy("AllowVercel", policy =>
+    {
+        policy.WithOrigins("https://home-exchange-client.vercel.app")
+              .AllowAnyHeader()     
+              .AllowAnyMethod()       
+              .AllowCredentials();    
+    });
 });
+
 
 var app = builder.Build();
 
