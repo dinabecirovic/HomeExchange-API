@@ -171,3 +171,4 @@ C:\Users\Dina\source\repos\HomeExchange\HomeExchange\bin\Debug\net8.0\AutoMapper
 C:\Users\Dina\source\repos\HomeExchange\HomeExchange\bin\Debug\net8.0\CloudinaryDotNet.dll
 C:\Users\Dina\source\repos\HomeExchange\HomeExchange\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Dina\source\repos\HomeExchange\HomeExchange\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Dina\source\repos\HomeExchange\HomeExchange\obj\Debug\net8.0\HomeExchange.sourcelink.json
