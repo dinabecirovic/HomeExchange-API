@@ -6,10 +6,10 @@ WORKDIR /src
 COPY . .
 
 # Restore nuget paketa
-RUN dotnet restore "HomeExchange-API/HomeExchange-API.csproj"
+RUN dotnet restore "HomeExchange/HomeExchange.csproj"
 
 # Build i publish
-RUN dotnet publish "HomeExchange-API/HomeExchange-API.csproj" -c Release -o /app/publish
+RUN dotnet publish "HomeExchange/HomeExchange.csproj" -c Release -o /app/publish
 
 # Runtime stage
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
@@ -22,4 +22,4 @@ COPY --from=build /app/publish .
 ENV ASPNETCORE_URLS=http://*:$PORT
 EXPOSE $PORT
 
-ENTRYPOINT ["dotnet", "HomeExchange-API.dll"]
+ENTRYPOINT ["dotnet", "HomeExchange.dll"]
