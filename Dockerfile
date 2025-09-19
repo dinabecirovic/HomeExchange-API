@@ -1,30 +1,26 @@
 # 1. Build stage
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /app
+WORKDIR /src
 
-# Kopiraj sln fajl
-COPY *.sln .
+# Kopiraj sve fajlove
+COPY . .
 
-# Kopiraj csproj fajlove iz HomeExchange foldera
-COPY HomeExchange/HomeExchange.Data/*.csproj ./HomeExchange.Data/
-COPY HomeExchange/HomeExchange.Interfaces/*.csproj ./HomeExchange.Interfaces/
-COPY HomeExchange/HomeExchange.Services/*.csproj ./HomeExchange.Services/
-COPY HomeExchange/HomeExchange.API/*.csproj ./HomeExchange.API/
+# Restore NuGet paketa za glavni API projekat
+RUN dotnet restore "HomeExchange-API/HomeExchange.API.csproj"
 
-# Restore pakete
-RUN dotnet restore
-
-# Kopiraj ceo kod
-COPY HomeExchange/. ./HomeExchange/
-WORKDIR /app/HomeExchange/HomeExchange.API
-RUN dotnet publish -c Release -o /app/publish
+# Build i publish u Release konfiguraciji
+RUN dotnet publish "HomeExchange-API/HomeExchange.API.csproj" -c Release -o /app/publish
 
 # 2. Runtime stage
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
+
+# Kopiraj build iz prethodnog stage-a
 COPY --from=build /app/publish .
 
+# Railway port
 ENV ASPNETCORE_URLS=http://+:$PORT
 EXPOSE $PORT
 
+# Start aplikacije
 ENTRYPOINT ["dotnet", "HomeExchange.API.dll"]
