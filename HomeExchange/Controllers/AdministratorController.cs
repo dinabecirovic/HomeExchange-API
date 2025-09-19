@@ -88,6 +88,33 @@ namespace HomeExchange.Controllers
         }
 
         [Authorize(Roles = "Administrator")]
+        [HttpGet("all-ads")]
+        public async Task<IActionResult> GetAllAdvertisementsForAdmin()
+        {
+            var ads = await _databaseContext.Advertisements
+                .Select(a => new {
+                    a.Id,
+                    a.UrlPhotos,
+                    a.Title,
+                    a.Description,
+                    a.Date,
+                    a.Address,
+                    a.City,
+                    a.Country,
+                    a.NumberOfRooms,
+                    a.HomeArea,
+                    a.Garden,
+                    a.ParkingSpace,
+                    a.SwimmingPool,
+                    a.Availability,
+                    Status = a.IsApproved ? "Approved" : "Pending"   // 👈 status kao string
+                })
+                .ToListAsync();
+
+            return Ok(ads);
+        }
+
+        [Authorize(Roles = "Administrator")]
         [HttpDelete("advertisements/{id}")]
         public async Task<IActionResult> DeleteAdvertisementAsAdmin(int id)
         {
