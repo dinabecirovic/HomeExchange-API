@@ -82,7 +82,7 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAngularClient",
+    options.AddPolicy("AllowVercel",
         policy =>
         {
             policy.WithOrigins("https://home-exchange-client.vercel.app") 
@@ -93,6 +93,8 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
+
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -102,7 +104,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseCors("AllowAngularClient");
+app.UseCors("AllowVercel");
 
 app.UseAuthentication();
 app.UseAuthorization();
