@@ -82,7 +82,7 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowVercel", policy =>
+    options.AddPolicy("AllowAll", policy =>
     {
         policy.WithOrigins("https://home-exchange-client.vercel.app")
               .AllowAnyHeader()     
@@ -105,7 +105,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseCors("AllowVercel");
+app.UseCors("AllowAll");
 
 app.UseAuthentication();
 app.UseAuthorization();

@@ -174,7 +174,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -187,18 +187,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "20250919102457_InitialCreate1.cs",
-              "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Migrations\\20250919102457_InitialCreate1.cs",
-              "RelativeDocumentMoniker": "HomeExchange\\Migrations\\20250919102457_InitialCreate1.cs",
-              "ToolTip": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Migrations\\20250919102457_InitialCreate1.cs",
-              "RelativeToolTip": "HomeExchange\\Migrations\\20250919102457_InitialCreate1.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T10:24:57.993Z"
             },
             {
               "$type": "Document",
@@ -232,7 +220,7 @@
               "RelativeDocumentMoniker": "HomeExchange\\Program.cs",
               "ToolTip": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Program.cs",
               "RelativeToolTip": "HomeExchange\\Program.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAuwFcAAAAkAAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAmwFQAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-18T13:23:33.386Z",
               "EditorCaption": ""
@@ -269,9 +257,22 @@
               "RelativeDocumentMoniker": "HomeExchange\\appsettings.json",
               "ToolTip": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\appsettings.json",
               "RelativeToolTip": "HomeExchange\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAACbAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-18T13:22:06.945Z"
+              "WhenOpened": "2025-08-18T13:22:06.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "20250919102457_InitialCreate1.cs",
+              "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Migrations\\20250919102457_InitialCreate1.cs",
+              "RelativeDocumentMoniker": "HomeExchange\\Migrations\\20250919102457_InitialCreate1.cs",
+              "ToolTip": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Migrations\\20250919102457_InitialCreate1.cs",
+              "RelativeToolTip": "HomeExchange\\Migrations\\20250919102457_InitialCreate1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-19T10:24:57.993Z"
             },
             {
               "$type": "Document",
