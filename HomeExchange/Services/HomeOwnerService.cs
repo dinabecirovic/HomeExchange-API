@@ -47,6 +47,33 @@ namespace HomeExchange.Services
             return advertisements;
         }
 
+        public async Task<List<AdvertisementResponseDTO>> GetMyAdvertisements(ClaimsPrincipal user)
+        {
+            var userId = int.Parse(user.FindFirst("id")?.Value ?? "0");
+
+            var myAds = await _databaseContext.Advertisements
+                .Where(a => a.HomeOwnerId == userId) 
+                .Select(a => new AdvertisementResponseDTO
+                {
+                    Id = a.Id,
+                    UrlPhotos = a.UrlPhotos,
+                    Title = a.Title,
+                    Description = a.Description,
+                    Date = a.Date,
+                    Address = a.Address,
+                    City = a.City,
+                    Country = a.Country,
+                    NumberOfRooms = a.NumberOfRooms,
+                    HomeArea = a.HomeArea,
+                    Garden = a.Garden,
+                    ParkingSpace = a.ParkingSpace,
+                    SwimmingPool = a.SwimmingPool
+                })
+                .ToListAsync();
+
+            return myAds;
+        }
+
         public async Task<AdvertisementResponseDTO?> GetAdvertisementById(int id)
         {
             var ad = await _databaseContext.Advertisements

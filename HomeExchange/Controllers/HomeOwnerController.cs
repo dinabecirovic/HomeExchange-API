@@ -41,6 +41,13 @@ namespace HomeExchange.Controllers
 
             return Ok(ad);
         }
+        [HttpGet("MyAdvertisements")]
+        [Authorize(Roles = "HomeOwner")]
+        public async Task<IActionResult> GetMyAdvertisements()
+        {
+            var myAds = await _homeOwnerService.GetMyAdvertisements(User);
+            return Ok(myAds);
+        }
 
 
         [HttpPost("CreateAdvertisement")]
