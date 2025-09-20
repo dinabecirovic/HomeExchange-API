@@ -59,6 +59,9 @@ namespace HomeExchange.Migrations
                     b.Property<float>("HomeArea")
                         .HasColumnType("real");
 
+                    b.Property<int>("HomeOwnerId")
+                        .HasColumnType("int");
+
                     b.Property<bool>("IsApproved")
                         .HasColumnType("bit");
 
@@ -80,6 +83,8 @@ namespace HomeExchange.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("HomeOwnerId");
 
                     b.ToTable("Advertisements");
                 });
@@ -176,6 +181,9 @@ namespace HomeExchange.Migrations
                     b.Property<DateTime>("EndDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<bool>("IsExchangeConfirmed")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("datetime2");
 
@@ -227,6 +235,17 @@ namespace HomeExchange.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("HomeExchange.Data.Models.Advertisement", b =>
+                {
+                    b.HasOne("HomeExchange.Data.Models.Users", "HomeOwner")
+                        .WithMany()
+                        .HasForeignKey("HomeOwnerId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("HomeOwner");
+                });
+
             modelBuilder.Entity("HomeExchange.Data.Models.Rating", b =>
                 {
                     b.HasOne("HomeExchange.Data.Models.Advertisement", "Advertisement")
@@ -251,13 +270,13 @@ namespace HomeExchange.Migrations
                     b.HasOne("HomeExchange.Data.Models.Advertisement", "Advertisement")
                         .WithMany()
                         .HasForeignKey("AdvertisementId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("HomeExchange.Data.Models.Users", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Advertisement");

@@ -4,6 +4,9 @@ using HomeExchange.Data.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using HomeExchange.Data;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace HomeExchange.Controllers
 {
@@ -13,10 +16,12 @@ namespace HomeExchange.Controllers
     public class HomeOwnerController : ControllerBase
     {
         private readonly IHomeOwnerService _homeOwnerService;
+        private readonly DatabaseContext _databaseContext;
 
-        public HomeOwnerController(IHomeOwnerService homeOwnerService)
+        public HomeOwnerController(IHomeOwnerService homeOwnerService, DatabaseContext databaseContext)
         {
             _homeOwnerService = homeOwnerService;
+            _databaseContext = databaseContext;
         }
 
         [HttpGet("Advertisements")]
@@ -62,13 +67,67 @@ namespace HomeExchange.Controllers
             return Ok(updatedAd);
         }
 
-        [HttpPost("Reservations")]
         [Authorize(Roles = "HomeOwner")]
+        [HttpPost("Reservations")]
         public async Task<IActionResult> CreateReservation([FromBody] ReservationRequestDTO request)
         {
-            var reservation = await _homeOwnerService.CreateReservation(request, User);
+            var userId = int.Parse(User.FindFirst("id")?.Value ?? "0");
+
+            var ad = await _databaseContext.Advertisements.FindAsync(request.AdvertisementId);
+            if (ad == null) return NotFound("Oglas nije pronađen.");
+            if (ad.HomeOwnerId == userId) return BadRequest("Ne možete rezervisati svoj dom.");
+
+            // Kreiramo rezervaciju korisnika
+            var reservation = new Reservation
+            {
+                AdvertisementId = request.AdvertisementId,
+                UserId = userId,
+                StartDate = request.StartDate,
+                EndDate = request.EndDate
+            };
+
+            await _databaseContext.Reservations.AddAsync(reservation);
+            await _databaseContext.SaveChangesAsync();
+
+            // Provera: da li vlasnik tog doma već rezervisao tvoj dom za isti period
+            var ownerReservation = await _databaseContext.Reservations
+                .Include(r => r.Advertisement)
+                .Where(r => r.UserId == ad.HomeOwnerId && r.Advertisement.HomeOwnerId == userId)
+                .Where(r => r.StartDate <= request.EndDate && r.EndDate >= request.StartDate)
+                .FirstOrDefaultAsync();
+
+            if (ownerReservation != null)
+            {
+                reservation.IsExchangeConfirmed = true;
+                ownerReservation.IsExchangeConfirmed = true;
+                await _databaseContext.SaveChangesAsync();
+            }
+
             return Ok(reservation);
         }
+        [Authorize(Roles = "HomeOwner")]
+        [HttpGet("ReservationsForOwner")]
+        public async Task<IActionResult> GetReservationsForOwner([FromQuery] int adId)
+        {
+            var userId = int.Parse(User.FindFirst("id")?.Value ?? "0");
+
+            var reservations = await _databaseContext.Reservations
+                .Where(r => r.AdvertisementId == adId && r.Advertisement.HomeOwnerId == userId)
+                .Include(r => r.User)
+                .Select(r => new {
+                    r.Id,
+                    r.StartDate,
+                    r.EndDate,
+                    r.IsExchangeConfirmed,
+                    UserFirstName = r.User.FirstName,
+                    UserLastName = r.User.LastName,
+                    UserEmail = r.User.Email
+                })
+                .ToListAsync();
+
+            return Ok(reservations);
+        }
+
 
         [HttpPost("Ratings")]
         [Authorize(Roles = "HomeOwner")]

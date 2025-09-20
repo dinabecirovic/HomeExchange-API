@@ -17,5 +17,9 @@
         public bool SwimmingPool { get; set; }
         public string Availability { get; set; }
         public bool IsApproved { get; set; } = false;
+
+        public int HomeOwnerId { get; set; }
+        public Users HomeOwner { get; set; } = null!;
+
     }
 }

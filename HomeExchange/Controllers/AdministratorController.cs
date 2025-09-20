@@ -107,7 +107,7 @@ namespace HomeExchange.Controllers
                     a.ParkingSpace,
                     a.SwimmingPool,
                     a.Availability,
-                    Status = a.IsApproved ? "Approved" : "Pending"   // 👈 status kao string
+                    Status = a.IsApproved ? "Approved" : "Pending"   
                 })
                 .ToListAsync();
 

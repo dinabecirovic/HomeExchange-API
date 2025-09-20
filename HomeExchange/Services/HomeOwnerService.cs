@@ -103,7 +103,7 @@ namespace HomeExchange.Services
                 }
             }
 
-            var HomeOwnerId = int.Parse(user.FindFirst("id")?.Value ?? "0");
+            var userId = int.Parse(user.FindFirst("id")?.Value ?? "0");
 
             var advertisement = new Advertisement
             {
@@ -121,6 +121,7 @@ namespace HomeExchange.Services
                 SwimmingPool = request.SwimmingPool,
                 Availability = "Available",
                 IsApproved = false,
+                HomeOwnerId = userId
             };
 
             await _databaseContext.Advertisements.AddAsync(advertisement);

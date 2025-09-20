@@ -11,5 +11,7 @@
 
         public int AdvertisementId { get; set; }
         public Advertisement Advertisement { get; set; }
+
+        public bool IsExchangeConfirmed { get; set; } = false;
     }
 }
