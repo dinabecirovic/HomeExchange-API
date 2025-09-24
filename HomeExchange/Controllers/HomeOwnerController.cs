@@ -84,7 +84,6 @@ namespace HomeExchange.Controllers
             if (ad == null) return NotFound("Oglas nije pronađen.");
             if (ad.HomeOwnerId == userId) return BadRequest("Ne možete rezervisati svoj dom.");
 
-            // Kreiramo rezervaciju korisnika
             var reservation = new Reservation
             {
                 AdvertisementId = request.AdvertisementId,
@@ -96,10 +95,9 @@ namespace HomeExchange.Controllers
             await _databaseContext.Reservations.AddAsync(reservation);
             await _databaseContext.SaveChangesAsync();
 
-            // Provera: da li vlasnik tog doma već rezervisao tvoj dom za isti period
             var ownerReservation = await _databaseContext.Reservations
                 .Include(r => r.Advertisement)
-                .Where(r => r.UserId == ad.HomeOwnerId && r.Advertisement.HomeOwnerId == userId)
+                .Where(r => r.UserId == ad.HomeOwnerId && r.Advertisement.HomeOwnerId == userId && r.AdvertisementId == ad.Id)
                 .Where(r => r.StartDate <= request.EndDate && r.EndDate >= request.StartDate)
                 .FirstOrDefaultAsync();
 

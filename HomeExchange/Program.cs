@@ -85,6 +85,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowVercel", policy =>
     {
         policy.WithOrigins("https://home-exchange-client.vercel.app")
+        //policy.WithOrigins("http://localhost:4200")
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
