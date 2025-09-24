@@ -73,7 +73,8 @@ namespace HomeExchange.Services
                     HomeArea = a.HomeArea,
                     Garden = a.Garden,
                     ParkingSpace = a.ParkingSpace,
-                    SwimmingPool = a.SwimmingPool
+                    SwimmingPool = a.SwimmingPool,
+                    HomeOwnerId = a.HomeOwnerId
                 })
                 .ToListAsync();
 
