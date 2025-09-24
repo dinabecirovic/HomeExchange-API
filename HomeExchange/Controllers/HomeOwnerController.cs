@@ -73,43 +73,14 @@ namespace HomeExchange.Controllers
             var updatedAd = await _homeOwnerService.UpdateAdvertisement(id, request);
             return Ok(updatedAd);
         }
-
         [Authorize(Roles = "HomeOwner")]
         [HttpPost("Reservations")]
         public async Task<IActionResult> CreateReservation([FromBody] ReservationRequestDTO request)
         {
-            var userId = int.Parse(User.FindFirst("id")?.Value ?? "0");
-
-            var ad = await _databaseContext.Advertisements.FindAsync(request.AdvertisementId);
-            if (ad == null) return NotFound("Oglas nije pronađen.");
-            if (ad.HomeOwnerId == userId) return BadRequest("Ne možete rezervisati svoj dom.");
-
-            var reservation = new Reservation
-            {
-                AdvertisementId = request.AdvertisementId,
-                UserId = userId,
-                StartDate = request.StartDate,
-                EndDate = request.EndDate
-            };
-
-            await _databaseContext.Reservations.AddAsync(reservation);
-            await _databaseContext.SaveChangesAsync();
-
-            var ownerReservation = await _databaseContext.Reservations
-                .Include(r => r.Advertisement)
-                .Where(r => r.UserId == ad.HomeOwnerId && r.Advertisement.HomeOwnerId == userId && r.AdvertisementId == ad.Id)
-                .Where(r => r.StartDate <= request.EndDate && r.EndDate >= request.StartDate)
-                .FirstOrDefaultAsync();
-
-            if (ownerReservation != null)
-            {
-                reservation.IsExchangeConfirmed = true;
-                ownerReservation.IsExchangeConfirmed = true;
-                await _databaseContext.SaveChangesAsync();
-            }
-
+            var userId = int.Parse(User.FindFirst("id")?.Value ?? "0"); var ad = await _databaseContext.Advertisements.FindAsync(request.AdvertisementId); if (ad == null) return NotFound("Oglas nije pronađen."); if (ad.HomeOwnerId == userId) return BadRequest("Ne možete rezervisati svoj dom."); var reservation = new Reservation { AdvertisementId = request.AdvertisementId, UserId = userId, StartDate = request.StartDate, EndDate = request.EndDate }; await _databaseContext.Reservations.AddAsync(reservation); await _databaseContext.SaveChangesAsync(); var ownerReservation = await _databaseContext.Reservations.Include(r => r.Advertisement).Where(r => r.UserId == ad.HomeOwnerId && r.Advertisement.HomeOwnerId == userId).Where(r => r.StartDate <= request.EndDate && r.EndDate >= request.StartDate).FirstOrDefaultAsync(); if (ownerReservation != null) { reservation.IsExchangeConfirmed = true; ownerReservation.IsExchangeConfirmed = true; await _databaseContext.SaveChangesAsync(); }
             return Ok(reservation);
         }
+
         [Authorize(Roles = "HomeOwner")]
         [HttpGet("ReservationsForOwner")]
         public async Task<IActionResult> GetReservationsForOwner([FromQuery] int adId)
