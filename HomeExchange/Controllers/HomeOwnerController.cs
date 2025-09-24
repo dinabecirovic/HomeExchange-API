@@ -140,12 +140,29 @@ namespace HomeExchange.Controllers
 
 
 
-        [HttpPost("Search")]
+        [HttpPost("search")]
         [AllowAnonymous]
-        public async Task<IActionResult> SearchAdvertisements([FromBody] AdvertisementSearchDTO criteria)
+        public async Task<ActionResult<List<Advertisement>>> SearchAdvertisements([FromBody] AdvertisementSearchDTO search)
         {
-            var results = await _homeOwnerService.SearchAdvertisements(criteria);
-            return Ok(results);
+            var query = _databaseContext.Advertisements.AsQueryable();
+
+            if (!string.IsNullOrEmpty(search.City))
+                query = query.Where(a => a.City.ToLower() == search.City.ToLower());
+
+            if (!string.IsNullOrEmpty(search.Country))
+                query = query.Where(a => a.Country.ToLower() == search.Country.ToLower());
+
+            if (search.MinRooms.HasValue)
+                query = query.Where(a => a.NumberOfRooms >= search.MinRooms.Value);
+
+            if (search.MinArea.HasValue)
+                query = query.Where(a => a.HomeArea >= search.MinArea.Value);
+
+            return await query
+                .Where(a => a.IsApproved) // opcionalno
+                .ToListAsync();
         }
+
     }
 }
+

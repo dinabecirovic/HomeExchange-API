@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|c:\\users\\dina\\source\\repos\\homeexchange\\homeexchange\\controllers\\homeownercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|solutionrelative:homeexchange\\controllers\\homeownercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|c:\\users\\dina\\source\\repos\\homeexchange\\homeexchange\\dtos\\advertisementsearchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|solutionrelative:homeexchange\\dtos\\advertisementsearchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|c:\\users\\dina\\source\\repos\\homeexchange\\homeexchange\\interfaces\\ihomeownerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|solutionrelative:homeexchange\\interfaces\\ihomeownerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|c:\\users\\dina\\source\\repos\\homeexchange\\homeexchange\\services\\homeownerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|solutionrelative:homeexchange\\services\\homeownerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|c:\\users\\dina\\source\\repos\\homeexchange\\homeexchange\\controllers\\homeownercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|solutionrelative:homeexchange\\controllers\\homeownercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|c:\\users\\dina\\source\\repos\\homeexchange\\homeexchange\\data\\models\\advertisement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|solutionrelative:homeexchange\\data\\models\\advertisement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|c:\\users\\dina\\source\\repos\\homeexchange\\homeexchange\\data\\models\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|solutionrelative:homeexchange\\data\\models\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|c:\\users\\dina\\source\\repos\\homeexchange\\homeexchange\\dtos\\advertisementresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,14 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|c:\\users\\dina\\source\\repos\\homeexchange\\homeexchange\\data\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|solutionrelative:homeexchange\\data\\models\\reservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|c:\\users\\dina\\source\\repos\\homeexchange\\homeexchange\\data\\models\\advertisement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|solutionrelative:homeexchange\\data\\models\\advertisement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|c:\\users\\dina\\source\\repos\\homeexchange\\homeexchange\\interfaces\\ihomeownerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|solutionrelative:homeexchange\\interfaces\\ihomeownerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|c:\\users\\dina\\source\\repos\\homeexchange\\homeexchange\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -87,10 +95,6 @@
       "RelativeMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|solutionrelative:homeexchange\\dtos\\registeruserrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|c:\\users\\dina\\source\\repos\\homeexchange\\homeexchange\\data\\models\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|solutionrelative:homeexchange\\data\\models\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|c:\\users\\dina\\source\\repos\\homeexchange\\homeexchange\\dtos\\ratingrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|solutionrelative:homeexchange\\dtos\\ratingrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -125,10 +129,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|c:\\users\\dina\\source\\repos\\homeexchange\\homeexchange\\profiles\\homeownermappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|solutionrelative:homeexchange\\profiles\\homeownermappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|c:\\users\\dina\\source\\repos\\homeexchange\\homeexchange\\dtos\\advertisementsearchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|solutionrelative:homeexchange\\dtos\\advertisementsearchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7CF84E2-654C-4A93-8CC3-2E68CA5E5061}|HomeExchange\\HomeExchange.csproj|c:\\users\\dina\\source\\repos\\homeexchange\\homeexchange\\dtos\\reservationresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -182,7 +182,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -198,45 +198,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeOwnerService.cs",
-              "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Services\\HomeOwnerService.cs",
-              "RelativeDocumentMoniker": "HomeExchange\\Services\\HomeOwnerService.cs",
-              "ToolTip": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Services\\HomeOwnerService.cs",
-              "RelativeToolTip": "HomeExchange\\Services\\HomeOwnerService.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAwEsAAAAyAAAA",
+              "DocumentIndex": 5,
+              "Title": "Home.cs",
+              "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Data\\Models\\Home.cs",
+              "RelativeDocumentMoniker": "HomeExchange\\Data\\Models\\Home.cs",
+              "ToolTip": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Data\\Models\\Home.cs",
+              "RelativeToolTip": "HomeExchange\\Data\\Models\\Home.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T15:05:28.736Z",
+              "WhenOpened": "2025-08-18T12:10:48.591Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AdvertisementSearchDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\DTOs\\AdvertisementSearchDTO.cs",
+              "RelativeDocumentMoniker": "HomeExchange\\DTOs\\AdvertisementSearchDTO.cs",
+              "ToolTip": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\DTOs\\AdvertisementSearchDTO.cs",
+              "RelativeToolTip": "HomeExchange\\DTOs\\AdvertisementSearchDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-07T11:50:19.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "HomeOwnerController.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Controllers\\HomeOwnerController.cs",
               "RelativeDocumentMoniker": "HomeExchange\\Controllers\\HomeOwnerController.cs",
               "ToolTip": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Controllers\\HomeOwnerController.cs",
               "RelativeToolTip": "HomeExchange\\Controllers\\HomeOwnerController.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAA5wCsAAAAGAAAA",
+              "ViewState": "AQIAAIYAAAAAAAAAAAA+wJAAAAB7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-07T16:28:18.074Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AdvertisementRequestDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\DTOs\\AdvertisementRequestDTO.cs",
-              "RelativeDocumentMoniker": "HomeExchange\\DTOs\\AdvertisementRequestDTO.cs",
-              "ToolTip": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\DTOs\\AdvertisementRequestDTO.cs",
-              "RelativeToolTip": "HomeExchange\\DTOs\\AdvertisementRequestDTO.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAA3wAwAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T11:28:46.608Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "AdvertisementResponseDTO.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\DTOs\\AdvertisementResponseDTO.cs",
               "RelativeDocumentMoniker": "HomeExchange\\DTOs\\AdvertisementResponseDTO.cs",
@@ -248,43 +249,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Advertisement.cs",
-              "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Data\\Models\\Advertisement.cs",
-              "RelativeDocumentMoniker": "HomeExchange\\Data\\Models\\Advertisement.cs",
-              "ToolTip": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Data\\Models\\Advertisement.cs",
-              "RelativeToolTip": "HomeExchange\\Data\\Models\\Advertisement.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAADwvxEAAAAwAAAA",
+              "DocumentIndex": 3,
+              "Title": "HomeOwnerService.cs",
+              "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Services\\HomeOwnerService.cs",
+              "RelativeDocumentMoniker": "HomeExchange\\Services\\HomeOwnerService.cs",
+              "ToolTip": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Services\\HomeOwnerService.cs",
+              "RelativeToolTip": "HomeExchange\\Services\\HomeOwnerService.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAjwBEAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T21:48:29.052Z"
+              "WhenOpened": "2025-09-03T15:05:28.736Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "20250920043033_PendingChanges.cs",
-              "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Migrations\\20250920043033_PendingChanges.cs",
-              "RelativeDocumentMoniker": "HomeExchange\\Migrations\\20250920043033_PendingChanges.cs",
-              "ToolTip": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Migrations\\20250920043033_PendingChanges.cs",
-              "RelativeToolTip": "HomeExchange\\Migrations\\20250920043033_PendingChanges.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "IHomeOwnerService.cs",
+              "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Interfaces\\IHomeOwnerService.cs",
+              "RelativeDocumentMoniker": "HomeExchange\\Interfaces\\IHomeOwnerService.cs",
+              "ToolTip": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Interfaces\\IHomeOwnerService.cs",
+              "RelativeToolTip": "HomeExchange\\Interfaces\\IHomeOwnerService.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAgwA4AAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-20T04:30:33.815Z"
+              "WhenOpened": "2025-09-24T11:27:40.108Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Program.cs",
-              "RelativeDocumentMoniker": "HomeExchange\\Program.cs",
-              "ToolTip": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Program.cs",
-              "RelativeToolTip": "HomeExchange\\Program.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAAAFYAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T13:23:33.386Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Reservation.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Data\\Models\\Reservation.cs",
               "RelativeDocumentMoniker": "HomeExchange\\Data\\Models\\Reservation.cs",
@@ -296,19 +287,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IHomeOwnerService.cs",
-              "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Interfaces\\IHomeOwnerService.cs",
-              "RelativeDocumentMoniker": "HomeExchange\\Interfaces\\IHomeOwnerService.cs",
-              "ToolTip": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Interfaces\\IHomeOwnerService.cs",
-              "RelativeToolTip": "HomeExchange\\Interfaces\\IHomeOwnerService.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAwwAoAAAApAAAA",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Program.cs",
+              "RelativeDocumentMoniker": "HomeExchange\\Program.cs",
+              "ToolTip": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Program.cs",
+              "RelativeToolTip": "HomeExchange\\Program.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAFYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T11:27:40.108Z"
+              "WhenOpened": "2025-08-18T13:23:33.386Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
+              "Title": "20250920043033_PendingChanges.cs",
+              "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Migrations\\20250920043033_PendingChanges.cs",
+              "RelativeDocumentMoniker": "HomeExchange\\Migrations\\20250920043033_PendingChanges.cs",
+              "ToolTip": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Migrations\\20250920043033_PendingChanges.cs",
+              "RelativeToolTip": "HomeExchange\\Migrations\\20250920043033_PendingChanges.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-20T04:30:33.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Advertisement.cs",
+              "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Data\\Models\\Advertisement.cs",
+              "RelativeDocumentMoniker": "HomeExchange\\Data\\Models\\Advertisement.cs",
+              "ToolTip": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Data\\Models\\Advertisement.cs",
+              "RelativeToolTip": "HomeExchange\\Data\\Models\\Advertisement.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAA8wBkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T21:48:29.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AdvertisementRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\DTOs\\AdvertisementRequestDTO.cs",
+              "RelativeDocumentMoniker": "HomeExchange\\DTOs\\AdvertisementRequestDTO.cs",
+              "ToolTip": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\DTOs\\AdvertisementRequestDTO.cs",
+              "RelativeToolTip": "HomeExchange\\DTOs\\AdvertisementRequestDTO.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAA3wAwAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T11:28:46.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "20250920043656_FixFKs.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Migrations\\20250920043656_FixFKs.cs",
               "RelativeDocumentMoniker": "HomeExchange\\Migrations\\20250920043656_FixFKs.cs",
@@ -320,7 +348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "HomeExchange\\Controllers\\UserController.cs",
@@ -332,7 +360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "DatabaseContext.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Data\\DatabaseContext.cs",
               "RelativeDocumentMoniker": "HomeExchange\\Data\\DatabaseContext.cs",
@@ -344,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "20250920042409_Reserv.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Migrations\\20250920042409_Reserv.cs",
               "RelativeDocumentMoniker": "HomeExchange\\Migrations\\20250920042409_Reserv.cs",
@@ -356,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "20250920045046_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Migrations\\20250920045046_InitialCreate.cs",
               "RelativeDocumentMoniker": "HomeExchange\\Migrations\\20250920045046_InitialCreate.cs",
@@ -380,7 +408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\appsettings.json",
               "RelativeDocumentMoniker": "HomeExchange\\appsettings.json",
@@ -392,7 +420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "20250920041257_Reserv.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Migrations\\20250920041257_Reserv.cs",
               "RelativeDocumentMoniker": "HomeExchange\\Migrations\\20250920041257_Reserv.cs",
@@ -404,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "AdministratorController.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Controllers\\AdministratorController.cs",
               "RelativeDocumentMoniker": "HomeExchange\\Controllers\\AdministratorController.cs",
@@ -416,7 +444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "Users.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Data\\Models\\Users.cs",
               "RelativeDocumentMoniker": "HomeExchange\\Data\\Models\\Users.cs",
@@ -428,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "LoginUserRequestDTO.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\DTOs\\LoginUserRequestDTO.cs",
               "RelativeDocumentMoniker": "HomeExchange\\DTOs\\LoginUserRequestDTO.cs",
@@ -440,7 +468,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "HomeExchange\\Services\\UserService.cs",
@@ -452,19 +480,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Home.cs",
-              "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Data\\Models\\Home.cs",
-              "RelativeDocumentMoniker": "HomeExchange\\Data\\Models\\Home.cs",
-              "ToolTip": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Data\\Models\\Home.cs",
-              "RelativeToolTip": "HomeExchange\\Data\\Models\\Home.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T12:10:48.591Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "RegisterUserRequestDTO.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\DTOs\\RegisterUserRequestDTO.cs",
               "RelativeDocumentMoniker": "HomeExchange\\DTOs\\RegisterUserRequestDTO.cs",
@@ -476,7 +492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Rating.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Data\\Models\\Rating.cs",
               "RelativeDocumentMoniker": "HomeExchange\\Data\\Models\\Rating.cs",
@@ -488,7 +504,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "ReservationRequestDTO.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\DTOs\\ReservationRequestDTO.cs",
               "RelativeDocumentMoniker": "HomeExchange\\DTOs\\ReservationRequestDTO.cs",
@@ -500,7 +516,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "RatingRequestDTO.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\DTOs\\RatingRequestDTO.cs",
               "RelativeDocumentMoniker": "HomeExchange\\DTOs\\RatingRequestDTO.cs",
@@ -512,7 +528,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "20250910141844_UpdateAdvertisementWithHome.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Migrations\\20250910141844_UpdateAdvertisementWithHome.cs",
               "RelativeDocumentMoniker": "HomeExchange\\Migrations\\20250910141844_UpdateAdvertisementWithHome.cs",
@@ -536,7 +552,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "20250910135421_Change1.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Migrations\\20250910135421_Change1.cs",
               "RelativeDocumentMoniker": "HomeExchange\\Migrations\\20250910135421_Change1.cs",
@@ -548,7 +564,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "LoginUserResponseDTO.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\DTOs\\LoginUserResponseDTO.cs",
               "RelativeDocumentMoniker": "HomeExchange\\DTOs\\LoginUserResponseDTO.cs",
@@ -560,7 +576,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "20250908161207_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Migrations\\20250908161207_InitialCreate.cs",
               "RelativeDocumentMoniker": "HomeExchange\\Migrations\\20250908161207_InitialCreate.cs",
@@ -572,7 +588,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "20250908152803_Change.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Migrations\\20250908152803_Change.cs",
               "RelativeDocumentMoniker": "HomeExchange\\Migrations\\20250908152803_Change.cs",
@@ -585,18 +601,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 31,
-              "Title": "AdvertisementSearchDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\DTOs\\AdvertisementSearchDTO.cs",
-              "RelativeDocumentMoniker": "HomeExchange\\DTOs\\AdvertisementSearchDTO.cs",
-              "ToolTip": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\DTOs\\AdvertisementSearchDTO.cs",
-              "RelativeToolTip": "HomeExchange\\DTOs\\AdvertisementSearchDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T11:50:19.316Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
               "Title": "HomeOwnerMappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Profiles\\HomeOwnerMappingProfile.cs",
               "RelativeDocumentMoniker": "HomeExchange\\Profiles\\HomeOwnerMappingProfile.cs",

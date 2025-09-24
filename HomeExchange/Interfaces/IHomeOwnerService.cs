@@ -12,7 +12,7 @@ public interface IHomeOwnerService
     Task<Rating> CreateRating(RatingRequestDTO request, ClaimsPrincipal user);
     Task<List<Rating>> GetRatingsForAdvertisement(int advertisementId);
 
-    Task<List<AdvertisementResponseDTO>> SearchAdvertisements(AdvertisementSearchDTO criteria);
+    //Task<List<AdvertisementResponseDTO>> SearchAdvertisements(AdvertisementSearchDTO criteria);
     Task<AdvertisementResponseDTO?> GetAdvertisementById(int id);
     Task<List<AdvertisementResponseDTO>> GetMyAdvertisements(ClaimsPrincipal user);
 

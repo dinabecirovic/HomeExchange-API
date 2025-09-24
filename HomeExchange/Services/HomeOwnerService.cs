@@ -11,6 +11,7 @@ using System.Reflection.PortableExecutable;
 using System;
 using System.Security.Claims;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Linq.Expressions;
 
 namespace HomeExchange.Services
 {
@@ -58,7 +59,7 @@ namespace HomeExchange.Services
             var userId = int.Parse(user.FindFirst("id")?.Value ?? "0");
 
             var myAds = await _databaseContext.Advertisements
-                .Where(a => a.HomeOwnerId == userId) 
+                .Where(a => a.HomeOwnerId == userId)
                 .Select(a => new AdvertisementResponseDTO
                 {
                     Id = a.Id,
@@ -84,7 +85,7 @@ namespace HomeExchange.Services
         public async Task<AdvertisementResponseDTO?> GetAdvertisementById(int id)
         {
             var ad = await _databaseContext.Advertisements
-                .Where(a => a.Id == id && a.IsApproved) 
+                .Where(a => a.Id == id && a.IsApproved)
                 .FirstOrDefaultAsync();
 
             if (ad == null) return null;
@@ -180,7 +181,7 @@ namespace HomeExchange.Services
         }
 
         public async Task DeleteAdvertisement(int advertisementId)
-        { 
+        {
             var advertisement = await _databaseContext.Advertisements
                 .FirstOrDefaultAsync(a => a.Id == advertisementId);
 
@@ -188,8 +189,8 @@ namespace HomeExchange.Services
             {
                 throw new System.Collections.Generic.KeyNotFoundException("Advertisement not found.");
             }
-                _databaseContext.Advertisements .Remove(advertisement);
-                await _databaseContext.SaveChangesAsync() ;
+            _databaseContext.Advertisements.Remove(advertisement);
+            await _databaseContext.SaveChangesAsync();
         }
 
         public async Task<AdvertisementResponseDTO> UpdateAdvertisement(int advertisementId, AdvertisementUpdateDTO request)
@@ -262,56 +263,8 @@ namespace HomeExchange.Services
         {
             return await _databaseContext.Ratings
                 .Where(r => r.AdvertisementId == advertisementId)
-                .OrderByDescending(r => r.Id) 
+                .OrderByDescending(r => r.Id)
                 .ToListAsync();
         }
-
-        public async Task<List<AdvertisementResponseDTO>> SearchAdvertisements(AdvertisementSearchDTO criteria)
-        {
-            var query = _databaseContext.Advertisements.AsQueryable();
-
-            query = query.Where(a => a.IsApproved);
-
-            if (!string.IsNullOrEmpty(criteria.City))
-                query = query.Where(a => a.City.Contains(criteria.City));
-
-            if (!string.IsNullOrEmpty(criteria.Country))
-                query = query.Where(a => a.Country.Contains(criteria.Country));
-
-            if (criteria.MinRooms.HasValue)
-                query = query.Where(a => a.NumberOfRooms >= criteria.MinRooms.Value);
-
-            if (criteria.MinArea.HasValue)
-                query = query.Where(a => a.HomeArea >= criteria.MinArea.Value);
-
-            if (criteria.Garden.HasValue)
-                query = query.Where(a => a.Garden == criteria.Garden.Value);
-
-            if (criteria.SwimmingPool.HasValue)
-                query = query.Where(a => a.SwimmingPool == criteria.SwimmingPool.Value);
-
-            if (criteria.ParkingSpace.HasValue)
-                query = query.Where(a => a.ParkingSpace == criteria.ParkingSpace.Value);
-
-            return await query 
-                .Select(a => new AdvertisementResponseDTO
-                {
-                    Id = a.Id,
-                    UrlPhotos = a.UrlPhotos,
-                    Title = a.Title,
-                    Description = a.Description,
-                    Date = a.Date,
-                    Address = a.Address,
-                    City = a.City,
-                    Country = a.Country,
-                    NumberOfRooms = a.NumberOfRooms,
-                    HomeArea = a.HomeArea,
-                    Garden = a.Garden,
-                    ParkingSpace = a.ParkingSpace,
-                    SwimmingPool = a.SwimmingPool,
-                })
-                .ToListAsync();
-        }
-
     }
 }
