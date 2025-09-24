@@ -10,6 +10,8 @@ public interface IHomeOwnerService
     Task<AdvertisementResponseDTO> UpdateAdvertisement(int advertisementId, AdvertisementUpdateDTO request);
     Task<Reservation> CreateReservation(ReservationRequestDTO request, ClaimsPrincipal user);
     Task<Rating> CreateRating(RatingRequestDTO request, ClaimsPrincipal user);
+    Task<List<Rating>> GetRatingsForAdvertisement(int advertisementId);
+
     Task<List<AdvertisementResponseDTO>> SearchAdvertisements(AdvertisementSearchDTO criteria);
     Task<AdvertisementResponseDTO?> GetAdvertisementById(int id);
     Task<List<AdvertisementResponseDTO>> GetMyAdvertisements(ClaimsPrincipal user);

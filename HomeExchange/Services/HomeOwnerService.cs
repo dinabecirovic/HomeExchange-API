@@ -6,7 +6,11 @@ using HomeExchange.DTOs;
 using HomeExchange.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
+using Newtonsoft.Json.Linq;
+using System.Reflection.PortableExecutable;
+using System;
 using System.Security.Claims;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace HomeExchange.Services
 {
@@ -248,8 +252,15 @@ namespace HomeExchange.Services
 
             await _databaseContext.Ratings.AddAsync(rating);
             await _databaseContext.SaveChangesAsync();
-
             return rating;
+        }
+
+        public async Task<List<Rating>> GetRatingsForAdvertisement(int advertisementId)
+        {
+            return await _databaseContext.Ratings
+                .Where(r => r.AdvertisementId == advertisementId)
+                .OrderByDescending(r => r.Id) // poslednje ocene prve
+                .ToListAsync();
         }
 
         public async Task<List<AdvertisementResponseDTO>> SearchAdvertisements(AdvertisementSearchDTO criteria)

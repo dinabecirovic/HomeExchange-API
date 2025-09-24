@@ -113,6 +113,15 @@ namespace HomeExchange.Controllers
             return Ok(rating);
         }
 
+        [HttpGet("Ratings/{advertisementId}")]
+        public async Task<IActionResult> GetRatings(int advertisementId)
+        {
+            var ratings = await _homeOwnerService.GetRatingsForAdvertisement(advertisementId);
+            return Ok(ratings);
+        }
+
+
+
         [HttpPost("Search")]
         [AllowAnonymous]
         public async Task<IActionResult> SearchAdvertisements([FromBody] AdvertisementSearchDTO criteria)
