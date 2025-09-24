@@ -30,6 +30,7 @@ namespace HomeExchange.Services
         {
             var advertisements = await _databaseContext.Advertisements
                 .Where(a => a.IsApproved)
+                .OrderByDescending(a => a.Date)
                 .Select(a => new AdvertisementResponseDTO
                 {
                     Id = a.Id,
@@ -45,6 +46,7 @@ namespace HomeExchange.Services
                     Garden = a.Garden,
                     ParkingSpace = a.ParkingSpace,
                     SwimmingPool = a.SwimmingPool,
+                    HomeOwnerId = a.HomeOwnerId
                 })
                 .ToListAsync();
 
@@ -259,7 +261,7 @@ namespace HomeExchange.Services
         {
             return await _databaseContext.Ratings
                 .Where(r => r.AdvertisementId == advertisementId)
-                .OrderByDescending(r => r.Id) // poslednje ocene prve
+                .OrderByDescending(r => r.Id) 
                 .ToListAsync();
         }
 

@@ -15,5 +15,7 @@
         public bool Garden { get; set; }
         public bool ParkingSpace { get; set; }
         public bool SwimmingPool { get; set; }
+        public int HomeOwnerId { get; set; }
+
     }
 }
