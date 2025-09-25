@@ -109,26 +109,17 @@ namespace HomeExchange.Controllers
         [Authorize(Roles = "HomeOwner")]
         public async Task<IActionResult> CreateRating([FromBody] RatingRequestDTO request)
         {
-            var userId = int.Parse(User.FindFirst("id")?.Value ?? "0");
-
-            var reservation = await _databaseContext.Reservations
-                .Where(r => r.AdvertisementId == request.AdvertisementId && r.UserId == userId)
-                .OrderByDescending(r => r.EndDate)
-                .FirstOrDefaultAsync();
-
-            if (reservation == null)
+            try
             {
-                return BadRequest("Ne možete ostaviti recenziju jer nemate rezervaciju za ovaj oglas.");
+                var rating = await _homeOwnerService.CreateRating(request, User);
+                return Ok(rating);
             }
-
-            if (reservation.EndDate > DateTime.UtcNow)
+            catch (InvalidOperationException ex)
             {
-                return BadRequest("Možete ostaviti recenziju tek nakon što istekne period rezervacije.");
+                return BadRequest(ex.Message);
             }
-
-            var rating = await _homeOwnerService.CreateRating(request, User);
-            return Ok(rating);
         }
+
 
         [HttpGet("Ratings/{advertisementId}")]
         [Authorize(Roles = "HomeOwner")]

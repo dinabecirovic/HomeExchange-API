@@ -246,6 +246,16 @@ namespace HomeExchange.Services
         {
             var userId = int.Parse(user.FindFirst("id")?.Value ?? "0");
 
+            var hasEndedReservation = await _databaseContext.Reservations
+                .AnyAsync(r => r.AdvertisementId == request.AdvertisementId
+                               && r.UserId == userId
+                               && r.EndDate <= DateTime.Now); 
+
+            if (!hasEndedReservation)
+            {
+                throw new InvalidOperationException("Možete ostaviti recenziju tek nakon što istekne period rezervacije.");
+            }
+
             var rating = new Rating
             {
                 Score = request.Score,
@@ -258,6 +268,7 @@ namespace HomeExchange.Services
             await _databaseContext.SaveChangesAsync();
             return rating;
         }
+
 
         public async Task<List<RatingResponseDTO>> GetRatingsForAdvertisement(int advertisementId)
         {
