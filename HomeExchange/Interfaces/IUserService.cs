@@ -9,5 +9,6 @@ namespace HomeExchange.Interfaces
         Task RegisterUser(Users users);
         string HashPassword(string password);
         string GenerateToken(Users users);
+
     }
 }

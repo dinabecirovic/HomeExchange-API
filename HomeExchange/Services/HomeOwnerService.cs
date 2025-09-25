@@ -251,7 +251,7 @@ namespace HomeExchange.Services
                 Score = request.Score,
                 Comment = request.Comment,
                 UserId = userId,
-                AdvertisementId = request.AdvertisementId
+                AdvertisementId = request.AdvertisementId,
             };
 
             await _databaseContext.Ratings.AddAsync(rating);
@@ -259,12 +259,24 @@ namespace HomeExchange.Services
             return rating;
         }
 
-        public async Task<List<Rating>> GetRatingsForAdvertisement(int advertisementId)
+        public async Task<List<RatingResponseDTO>> GetRatingsForAdvertisement(int advertisementId)
         {
             return await _databaseContext.Ratings
                 .Where(r => r.AdvertisementId == advertisementId)
+                .Include(r => r.User)
                 .OrderByDescending(r => r.Id)
+                .Select(r => new RatingResponseDTO
+                {
+                    Id = r.Id,
+                    Score = r.Score,
+                    Comment = r.Comment,
+                    AdvertisementId = r.AdvertisementId,
+                    UserId = r.UserId,
+                    UserFirstName = r.User.FirstName,
+                    UserLastName = r.User.LastName
+                })
                 .ToListAsync();
         }
+
     }
 }

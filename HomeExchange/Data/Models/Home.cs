@@ -1,8 +1,10 @@
-﻿namespace HomeExchange.Data.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace HomeExchange.Data.Models
 {
+    [NotMapped]
     public class Home
     {
-        public int Id { get; set; }
         public List<string> UrlPhotos { get; set; }
         public string Address { get; set; }
         public string City { get; set; }

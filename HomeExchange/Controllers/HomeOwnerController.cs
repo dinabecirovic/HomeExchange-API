@@ -130,15 +130,13 @@ namespace HomeExchange.Controllers
             return Ok(rating);
         }
 
-
         [HttpGet("Ratings/{advertisementId}")]
-        public async Task<IActionResult> GetRatings(int advertisementId)
+        [Authorize(Roles = "HomeOwner")]
+        public async Task<IActionResult> GetRatingsForAdvertisement(int advertisementId)
         {
             var ratings = await _homeOwnerService.GetRatingsForAdvertisement(advertisementId);
             return Ok(ratings);
         }
-
-
 
         [HttpPost("search")]
         [AllowAnonymous]
