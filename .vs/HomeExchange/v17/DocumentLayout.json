@@ -206,8 +206,7 @@
               "RelativeToolTip": "HomeExchange\\DTOs\\RatingRequestDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T13:01:12.712Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T13:01:12.712Z"
             },
             {
               "$type": "Document",
@@ -219,8 +218,7 @@
               "RelativeToolTip": "HomeExchange\\DTOs\\RatingResponseDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T13:17:45.902Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T13:17:45.902Z"
             },
             {
               "$type": "Document",
@@ -232,8 +230,7 @@
               "RelativeToolTip": "HomeExchange\\DTOs\\ReservationResponseDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T13:20:33.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T13:20:33.252Z"
             },
             {
               "$type": "Document",
@@ -245,8 +242,7 @@
               "RelativeToolTip": "HomeExchange\\Data\\Models\\Rating.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T12:21:52.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-18T12:21:52.562Z"
             },
             {
               "$type": "Document",
@@ -258,8 +254,7 @@
               "RelativeToolTip": "HomeExchange\\Services\\HomeOwnerService.cs",
               "ViewState": "AQIAAA8BAAAAAAAAAAAUwBkBAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T15:05:28.736Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T15:05:28.736Z"
             },
             {
               "$type": "Document",
@@ -271,8 +266,7 @@
               "RelativeToolTip": "HomeExchange\\Interfaces\\IUserService.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAQwAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-03T14:58:56.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-03T14:58:56.641Z"
             },
             {
               "$type": "Document",
@@ -282,7 +276,7 @@
               "RelativeDocumentMoniker": "HomeExchange\\Interfaces\\IHomeOwnerService.cs",
               "ToolTip": "C:\\Users\\Dina\\source\\repos\\HomeExchange\\HomeExchange\\Interfaces\\IHomeOwnerService.cs",
               "RelativeToolTip": "HomeExchange\\Interfaces\\IHomeOwnerService.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAQwAsAAABOAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAzwAsAAABOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-24T11:27:40.108Z",
               "EditorCaption": ""
@@ -297,8 +291,7 @@
               "RelativeToolTip": "HomeExchange\\Controllers\\HomeOwnerController.cs",
               "ViewState": "AQIAAJwAAAAAAAAAAAAUwKYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-07T16:28:18.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-07T16:28:18.074Z"
             },
             {
               "$type": "Document",
@@ -310,8 +303,7 @@
               "RelativeToolTip": "HomeExchange\\DTOs\\ReservationRequestDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-19T13:21:42.313Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T13:21:42.313Z"
             },
             {
               "$type": "Document",
@@ -323,8 +315,7 @@
               "RelativeToolTip": "HomeExchange\\Data\\Models\\Reservation.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T12:49:45.151Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-18T12:49:45.151Z"
             },
             {
               "$type": "Document",
@@ -336,8 +327,7 @@
               "RelativeToolTip": "HomeExchange\\Data\\Models\\Advertisement.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T21:48:29.052Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-18T21:48:29.052Z"
             },
             {
               "$type": "Document",
@@ -373,8 +363,7 @@
               "RelativeToolTip": "HomeExchange\\Data\\Models\\Home.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAADwvw4AAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T12:10:48.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-18T12:10:48.591Z"
             },
             {
               "$type": "Document",
